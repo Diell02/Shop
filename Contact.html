@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <link rel="stylesheet" type="text/css" href="Contact.css">
+    </head>
+    
+    <body >
+      <script src="Contact.js"></script>
+      <header>
+
+          <label id="Home">Home</label>
+          
+          <label id="Contact_Us">Contact Us</label>
+          
+          <label id="About_Us">About Us</label>
+
+      </header>
+
+        <div class="container">
+            
+            <div class="row">
+              <div id="map"></div>
+                <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTT55Tbb8I00KPYu079yjwC2DLdLNoi2c&callback=initMap&libraries=&v=weekly"
+                async
+              ></script>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="emri">Emri</label>
+                  <input type="text" id="emri" name="emri" placeholder="Emri juaj...">
+                  <label for="mbiemri">Mbiemri</label>
+                  <input type="text" id="mbiemri" name="mbiemri" placeholder="Mbiemri juaj...">
+                  <label for="adresa">Adresa</label>
+                  <input type="text" id="adresa" name="adresa" placeholder="Adresa juaj...">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Email..">
+                  
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+        
+    </body>
+    
+</html>

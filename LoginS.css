@@ -1,0 +1,106 @@
+
+.imgcontainer {
+  text-align: center;
+  margin: auto;
+}
+img.avatar {
+  width: 10%;
+  border-radius: 10%;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+h2{
+background-color: #FEFFED;
+padding: 30px 35px;
+margin: -10px -50px;
+text-align:center;
+border-radius: 10px 10px 0 0;
+}
+hr{
+margin: 10px -50px;
+border: 0;
+border-top: 1px solid #ccc;
+margin-bottom: 40px;
+}
+div.container{
+display: flex;
+width: 30%;
+margin: auto;
+font-family: 'Raleway', sans-serif;
+}
+div.main{
+width: 300px;
+padding: 10px 50px 25px;
+border: 2px solid gray;
+border-radius: 10px;
+font-family: raleway;
+float:left;
+margin-top:50px;
+}
+input[type=text],input[type=password]{
+width: 100%;
+height: 40px;
+padding: 5px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px solid #ccc;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+}
+label{
+color: #464646;
+text-shadow: 0 1px 0 #fff;
+font-size: 14px;
+font-weight: bold;
+}
+center{
+font-size:32px;
+}
+
+.back{
+text-decoration: none;
+border: 1px solid rgb(0, 143, 255);
+background-color: rgb(0, 214, 255);
+padding: 3px 20px;
+border-radius: 2px;
+color: black;
+}
+input[type=button]{
+
+font-size: 16px;
+background: linear-gradient(#69b2e2 5%, #0099ff 100%);
+border: 1px solid #0099ff;
+color: #4E4D4B;
+font-weight: bold;
+cursor: pointer;
+width: 100%;
+border-radius: 5px;
+padding: 10px 0;
+outline:none;
+}
+input[type=button]:hover{
+background: linear-gradient(#2f9be4 5%, #0099ff 100%);
+}
+#submit{
+  margin-left: 6px;
+}
+
+#reg{
+
+  font-size: 16px;
+  background: linear-gradient(#8be269 5%, #5eff00 100%);
+  border: 1px solid #a6ff00;
+  color: #4E4D4B;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0;
+  outline:none;
+  margin-left: 6px;
+}
+
+#reg:hover{
+  background: linear-gradient(#2fe465 5%, #33ff00 100%);
+}
