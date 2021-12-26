@@ -5,8 +5,6 @@
 .mySlides1 {display: none;}
 img {vertical-align: middle;}
 
-
-
 .header {
   overflow:hidden;
   background-color: #f1f1f1;
@@ -67,15 +65,15 @@ img {vertical-align: middle;}
 
 .slideshow-container {
   max-width: 1000px;
-  position: relative;
+  position:static;
   margin: auto;
 }
 .mySlides{
+  position:static;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   color:#f4363667;
-  
 }
 .dot {
   height: 15px;
@@ -92,6 +90,7 @@ img {vertical-align: middle;}
 }
 
 .fade {
+  
   -webkit-animation-name: fade;
   -webkit-animation-duration: 2.0s;
   animation-name: fade;
