@@ -1,0 +1,250 @@
+
+* {box-sizing: border-box;background-color: #f1f1f1; 
+  font-family: 'Courier New', Courier, monospace;}
+.mySlides {display: none;}
+.mySlides1 {display: none;}
+img {vertical-align: middle;}
+
+
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color:#f4363667;
+  
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.0s;
+  animation-name: fade;
+  animation-duration: 2.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
+
+.Shirt-L{
+ float: left;
+ margin-left: 150px;
+}
+.Shirts-L{
+  float:right;
+  
+}
+#cmimi{
+  color: red;
+}
+#emri{
+  color: rgb(255, 214, 127);
+}
+#buy-L{
+  float: right;
+}
+
+.Shirt-R{
+  float: right;
+  margin-right: 150px;
+ }
+ .Shirts-R{
+   float:left;
+ }
+
+ #buy-L{
+  background-color: #f44336; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: right;
+}
+#buy-L:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+ #buy-R{
+  background-color: #f44336; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+}
+#buy-R:hover {
+  background-color: #ddd;
+  color: black;
+}
+#lined{
+  margin-top: 1100px;
+}
+
+.mySlide{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color:#f4c136d3;
+}
+#teksti{
+  color:black;
+}
+#imgat{
+    border-radius: 100px;
+    width: 130px;
+    height: 130px;
+}
+
+.dot1 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active1 {
+  background-color: #717171;
+}
+
+
+.footer {
+  position:relative;
+  margin-top: 50px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+   background-color: #717171 !important;
+}
+
+.footer a {
+  
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+}
+
+.footer a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+#ul1{
+  list-style-type: none;
+  margin-left:40px;
+  font-size: 20px;
+}
+#ul2{
+  list-style-type: none;
+  margin-right: 200px;
+}
+.footer-left a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.footer-right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.footer a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.footer-left{
+  float: left;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.footer-right{
+  float: right;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.icon{
+  padding: 10px;
+  float:right;
+}
