@@ -97,7 +97,9 @@ img {vertical-align: middle;}
   from {opacity: .3} 
   to {opacity: 1}
 }
-
+#rek{
+  text-align: center;
+}
 
 .Shirt-L{
  float: left;
