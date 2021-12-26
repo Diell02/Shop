@@ -1,5 +1,5 @@
 
-* {box-sizing: border-box;background-color: #f1f1f1; 
+* {box-sizing: border-box;background-color: #f1f1f1;
   font-family: 'Courier New', Courier, monospace;}
 .mySlides {display: none;}
 .mySlides1 {display: none;}
@@ -134,8 +134,8 @@ img {vertical-align: middle;}
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  float: right;
 }
+
 #buy-L:hover {
   background-color: #ddd;
   color: black;
@@ -150,7 +150,6 @@ img {vertical-align: middle;}
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  float: left;
 }
 #buy-R:hover {
   background-color: #ddd;
@@ -196,7 +195,7 @@ img {vertical-align: middle;}
   left: 0;
   bottom: 0;
   width: 100%;
-   background-color: #717171 !important;
+  background-color: #717171;
 }
 
 .footer a {
