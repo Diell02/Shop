@@ -22,6 +22,6 @@ return false;
 
 function regi(){
     
-window.location = "Home.html";
+window.location = "Register.html";
 
 }
