@@ -1,38 +1,72 @@
-<?php
-		// servername => localhost
-		// username => root
-		// password => empty
-		// database name => staff
-		$conn = mysqli_connect("localhost", "root", "", "Contact");
-		
-		// Check connection
-		if($conn === false){
-			die("ERROR: Could not connect. "
-				. mysqli_connect_error());
-		}
-		
-		// Taking all 5 values from the form data(input)
-		$name = $_REQUEST['name'];
-		$lastN = $_REQUEST['lastN'];
-		$address = $_REQUEST['address'];
-		$email = $_REQUEST['email'];
-		$message = $_REQUEST['message'];
-		
-		// Performing insert query execution
-		// here our table name is college
-		$sql = "INSERT INTO dataC VALUES ('$name',
-			'$lastN','$address','$email','$message')";
-		
-		if(mysqli_query($conn, $sql)){
-			echo "Mesazhi u dergua me sukses. Ekipi jone do te ju kontaktoj se shpejti.";
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <title>Project</title>
+        <link rel="stylesheet" type="text/css" href="Contact.css">
+    </head>
+    
+    <body >
+      
+      <div class="header" id="Header1">
+        <a href="Home.html" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
+        <div class="header-right">
+          <a href="Home.html">Home</a>
+          <a class ="active" href="Contact.php">Contact</a>
+          <a href="About.html">About</a>
+          <a href="Shop.html">Shop</a>
+          <a href="Login.html">Login</a>
+        </div>
+      </div>
 
-		} else{
-			echo "ERROR: 404 (Te dhenat nuk jane ruajtur) $sql. "
-				. mysqli_error($conn);
-		}
-		
-		// Close connection
-		mysqli_close($conn);
-		
-?>
+        <div class="container">
+          <div id="map">
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTT55Tbb8I00KPYu079yjwC2DLdLNoi2c&callback=initMap&libraries=&v=weekly"
+            async
+          ></script></div>
+            <div class="row">
+              <div class="column">
+                <form method="post" action="Contact.php" name="contact">
+                  <label for="name">Emri</label>
+                  <input type="text" id="name" name="name" placeholder="Emri juaj...">
+                  <label for="lastN">Mbiemri</label>
+                  <input type="text" id="lastN" name="lastN" placeholder="Mbiemri juaj...">
+                  <label for="address">Adresa</label>
+                  <input type="text" id="address" name="address" placeholder="Adresa juaj...">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Email..">
 
+                  <textarea for ="message" id="message" name="message" placeholder="Mesazhi..." style="height:90px"></textarea>
+                  <input type="submit" name="submit" value="Dergo">
+                </form>
+                <?php 
+                  require_once 'Contactt.php';
+                ?>
+              </div>
+            </div>
+          </div>
+            
+          <div class="footer">
+            <div class="footer-left">
+              <a href="Home.html" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
+              <ul id="ul1">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Login.html">Login</a></li>
+              </div>
+              <div class="footer-right">
+                <a href="https://www.facebook.com" class="icon"><img src="Pics/fb.png" width="30px", height="30px"></a>
+                <a href="https://www.twitter.com" class="icon"><img src="Pics/tw.png" width="30px", height="30px"></a>
+                <a href="https://www.google.com" class="icon"><img src="Pics/g.png" width="30px", height="30px"></a>
+                <a href="https://www.linkedin.com" class="icon"><img src="Pics/in.png" width="30px", height="30px"></a>
+                <br><br><br>
+                <ul id="ul2"><li>Phone:+383123123</li>
+                  <li>Email:ubt-uni@ubt-uni.net</li>
+                  <li>Adresa:Nena Tereze</li></ul></div> 
+          </div>
+          <script src="Contact.js"></script>
+    </body>
+    
+</html>
