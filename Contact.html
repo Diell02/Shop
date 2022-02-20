@@ -26,17 +26,17 @@
           ></script></div>
             <div class="row">
               <div class="column">
-                <form action="Home.html">
-                  <label for="emri">Emri</label>
-                  <input type="text" id="emri" name="emri" placeholder="Emri juaj...">
-                  <label for="mbiemri">Mbiemri</label>
-                  <input type="text" id="mbiemri" name="mbiemri" placeholder="Mbiemri juaj...">
-                  <label for="adresa">Adresa</label>
-                  <input type="text" id="adresa" name="adresa" placeholder="Adresa juaj...">
+                <form method="post" action="Contact.php">
+                  <label for="name">Emri</label>
+                  <input type="text" id="name" name="name" placeholder="Emri juaj...">
+                  <label for="lastN">Mbiemri</label>
+                  <input type="text" id="lastN" name="lastN" placeholder="Mbiemri juaj...">
+                  <label for="address">Adresa</label>
+                  <input type="text" id="address" name="address" placeholder="Adresa juaj...">
                   <label for="email">Email</label>
                   <input type="email" id="email" name="email" placeholder="Email..">
 
-                  <textarea id="subject" name="subject" placeholder="Mesazhi..." style="height:90px"></textarea>
+                  <textarea for ="message" id="message" name="message" placeholder="Mesazhi..." style="height:90px"></textarea>
                   <input type="submit" value="Dergo">
                 </form>
               </div>
