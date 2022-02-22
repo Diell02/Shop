@@ -1,6 +1,8 @@
 <?php
 include_once 'userRepository.php';
 include_once 'user.php';
+include_once 'contactRepository.php';
+include_once 'cont.php';
 
 if(isset($_POST['registerBtn'])){
     if(empty($_POST['name']) || empty($_POST['lastN']) ||
@@ -26,6 +28,28 @@ if(isset($_POST['registerBtn'])){
         $userRepository->insertUser($user);
 
 
+    }
+}
+
+if(isset($_POST['contBtn'])){
+    if(empty($_POST['name']) || empty($_POST['lastN']) 
+        || empty($_POST['address']) || empty($_POST['email']) || empty($_POST['message']) ){
+        echo"Fill all fields !";
+    }
+    else{
+        
+        $name = $_REQUEST['name'];
+        $lastN = $_REQUEST['lastN'];
+        $address = $_REQUEST['address'];
+        $email = $_REQUEST['email'];
+        $message = $_REQUEST['message'];
+        $id = $name.rand(100,999);
+
+        $cont = new Cont($id,$name,$lastN,$address,$email,$message);
+        $contactRepository = new contactRepository();
+
+        $contactRepository->insertCont($cont);
+        
     }
 }
 

@@ -38,10 +38,10 @@
                   <input type="email" id="email" name="email" placeholder="Email..">
 
                   <textarea for ="message" id="message" name="message" placeholder="Mesazhi..." style="height:90px"></textarea>
-                  <input type="submit" name="submit" value="Dergo">
+                  <input type="submit" name="contBtn" value="Dergo">
                 </form>
                 <?php 
-                  require_once 'Contactt.php';
+                  require_once 'registerController.php';
                 ?>
               </div>
             </div>
