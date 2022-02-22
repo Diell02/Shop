@@ -30,7 +30,7 @@
             <div class="header-right">
               <a href="Home.php">Home</a>
               <a href="Contact.php">Contact</a>
-              <a href="About.html">About</a>
+              <a href="About.php">About</a>
               <a class="active" href="Shop.php">Shop</a>
               <a href="Login.php">Login</a>
               <a href="dashboard.php" class="<?php echo $hide ?>">Dashboard</a>
@@ -46,7 +46,7 @@
               <ul id="ul1">
                 <li><a href="Home.php">Home</a></li>
                 <li><a href="Contact.php">Contact</a></li>
-                <li><a href="About.html">About</a></li>
+                <li><a href="About.php">About</a></li>
                 <li><a href="Login.php">Login</a></li>
               </div>
               <div class="footer-right">

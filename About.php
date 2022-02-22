@@ -1,3 +1,6 @@
+<?php 
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,7 +15,7 @@
             <div class="header-right">
               <a href="Home.php">Home</a>
               <a href="Contact.php">Contact</a>
-              <a class="active" href="About.html">About</a>
+              <a class="active" href="About.php">About</a>
               <a href="Shop.php">Shop</a>
               <a href="Login.php">Login</a>
               
@@ -26,7 +29,7 @@
               <ul id="ul1">
                 <li><a href="Home.php">Home</a></li>
                 <li><a href="Contact.php">Contact</a></li>
-                <li><a href="About.html">About</a></li>
+                <li><a href="About.php">About</a></li>
                 <li><a href="Login.php">Login</a></li>
               </div>
               <div class="footer-right">
