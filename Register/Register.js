@@ -1,12 +1,12 @@
 var username = document.forms['vform']['username'];
 var email = document.forms['vform']['email'];
-var password = document.forms['vform']['password'];
-var password_confirm = document.forms['vform']['password_confirm'];
+var password = document.forms['vform']['pass'];
+var password_confirm = document.forms['vform']['passc'];
 var address = document.forms['vform']['address'];
 var zipcode = document.forms['vform']['zipcode'];
 var phone = document.forms['vform']['phone'];
-var emri = document.forms['vform']['emri'];
-var lastname = document.forms['vform']['lastname'];
+var namee = document.forms['vform']['name'];
+var lastname = document.forms['vform']['lastN'];
 
 var name_error = document.getElementById('name_error');
 var email_error = document.getElementById('email_error');
@@ -14,7 +14,7 @@ var password_error = document.getElementById('password_error');
 var address_error = document.getElementById('address_error');
 var zipcode_error = document.getElementById('zipcode_error');
 var phone_error = document.getElementById('phone_error');
-var emri_error = document.getElementById('emri_error');
+var namee_error = document.getElementById('namee_error');
 var lastname_error = document.getElementById('lastname_error');
 
 username.addEventListener('blur', nameVerify, true);
@@ -23,7 +23,7 @@ password.addEventListener('blur', passwordVerify, true);
 address.addEventListener('blur', addressVerify, true);
 zipcode.addEventListener('blur', zipcodeVerify, true);
 phone.addEventListener('blur', phoneVerify, true);
-emri.addEventListener('blur', emriVerify, true);
+namee.addEventListener('blur', nameeVerify, true);
 lastname.addEventListener('blur', lastnameVerify, true);
 
 function Validate() {
@@ -89,18 +89,18 @@ function Validate() {
     return false;
   }
 
-  if (emri.value == "") {
-    emri.style.border = "1px solid red";
-    document.getElementById('emri_div').style.color = "red";
-    emri_error.textContent = "Name is required";
-    emri.focus();
+  if (namee.value == "") {
+    namee.style.border = "1px solid red";
+    document.getElementById('namee_div').style.color = "red";
+    namee_error.textContent = "Name is required";
+    namee.focus();
     return false;
   }
-  if (emri.value.length < 2) {
-    emri.style.border = "1px solid red";
-    document.getElementById('emri_div').style.color = "red";
-    emri_error.textContent = "The name must contain more than 2 characters";
-    emri.focus();
+  if (namee.value.length < 2) {
+    namee.style.border = "1px solid red";
+    document.getElementById('namee_div').style.color = "red";
+    namee_error.textContent = "The name must contain more than 2 characters";
+    namee.focus();
     return false;
   }
 

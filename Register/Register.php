@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,20 +20,20 @@
     </div>
   </div>
 
-    <form method="POST" action="Home.html" onsubmit="return Validate()" name="vform" >
+  <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return Validate()" name="vform" >
         <div class="container">
           <h1 id="reg">Regjistrohu</h1>
           
           <hr>
-          <div id="emri_div">
+          <div id="name_div">
             <label>Name</label> <br>
-            <input type="text" name="emri" class="textInput">
-            <div id="emri_error"></div>
+            <input type="text" name="name" class="textInput">
+            <div id="name_error"></div>
           </div>
 
           <div id="lastname_div">
             <label>Lastname</label> <br>
-            <input type="text" name="lastname" class="textInput">
+            <input type="text" name="lastN" class="textInput">
             <div id="lastname_error"></div>
           </div>
 
@@ -68,18 +69,19 @@
       
           <div id="password_div">
             <label>Password</label> <br>
-            <input type="password" name="password" class="textInput">
+            <input type="password" name="pass" class="textInput">
           </div>
 
           <div id="pass_confirm_div">
              <label>Password confirm</label> <br>
-             <input type="password" name="password_confirm" class="textInput">
+             <input type="password" name="passc" class="textInput">
              <div id="password_error"></div>
           <hr>
       
-          <button type="submit" class="registerbtn">Register</button>
+          <input type="submit" id="registerBtn" name="registerBtn" value="Register">
         </div>
       </form>
+      <?php include_once 'registerController.php';?>
       <div id="con-r"><button type="submit" class="loginbtn" onclick="login()">Login</button></div>
       <script src="Register.js"></script>
 </body>
