@@ -18,7 +18,7 @@ if(isset($_POST['registerBtn'])){
         $zipcode = $_POST['zipcode'];
         $pass = $_POST['pass'];
         $passc = $_POST['passc'];
-        $id = $id.rand(100,999);
+        $id = $username.rand(100,999);
 
         $user  = new User($id,$name,$lastN,$address,$phone,$username,$email,$zipcode,$pass,$passc);
         $userRepository = new userRepository();

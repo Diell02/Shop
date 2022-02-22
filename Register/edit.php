@@ -25,7 +25,7 @@ $user  = $userRepository->getUserById($userId);
 <body>
     <h3>Edit User</h3>
     <form action="" method="post">
-        <input type="number" name="id"  value="<?=$user['id']?>" readonly> <br> <br>
+        <input type="text" name="id"  value="<?=$user['id']?>" readonly> <br> <br>
         <input type="text" name="name"  value="<?=$user['name']?>"> <br> <br>
         <input type="text" name="lastN"  value="<?=$user['lastN']?>"> <br> <br>
         <input type="text" name="address"  value="<?=$user['address']?>"> <br> <br>

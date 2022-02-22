@@ -5,12 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
 </head>
 <body>
-    
 
-    <table border="1">
-             <tr>
+<div class="header" id="Header1">
+            <a href="Home.html" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
+            <div class="header-right">
+              <a class="active" href="Home.html">Home</a>
+            </div>
+          </div>
+
+
+    <div class="dash">
+    <table name="info">
+             <tr id="tab">
                  <th>ID</th>
                  <th>NAME</th>
                  <th>LAST NAME</th>
@@ -57,6 +66,6 @@
              
              
              ?>
-    </table>
+    </table></div>
 </body>
 </html>

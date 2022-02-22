@@ -2,10 +2,10 @@
 		// servername => localhost
 		// username => root
 		// password => empty
-		// database name => staff
+		// database name => Contact
 		$conn = mysqli_connect("localhost", "root", "", "Contact");
 		
-		// Check connection
+		
 		if($conn === false){
 			die("ERROR: Could not connect. "
 				. mysqli_connect_error());
@@ -13,32 +13,31 @@
 
 		if(isset($_POST['submit'])){
 			if(empty($_POST['name']) || empty($_POST['lastN']) 
-			|| empty($_POST['address']) || empty($_POST['email']) || empty($_POST['message']) ){
+				|| empty($_POST['address']) || empty($_POST['email']) || empty($_POST['message']) ){
 				echo"Fill all fields !";
 			}
 			else{
-				// Taking all 5 values from the form data(input)
-		$name = $_REQUEST['name'];
-		$lastN = $_REQUEST['lastN'];
-		$address = $_REQUEST['address'];
-		$email = $_REQUEST['email'];
-		$message = $_REQUEST['message'];
+				
+				$name = $_REQUEST['name'];
+				$lastN = $_REQUEST['lastN'];
+				$address = $_REQUEST['address'];
+				$email = $_REQUEST['email'];
+				$message = $_REQUEST['message'];
 		
-		// Performing insert query execution
-		// here our table name is college
-		$sql = "INSERT INTO dataC VALUES ('$name',
-			'$lastN','$address','$email','$message')";
-		
-		if(mysqli_query($conn, $sql)){
-			echo "Mesazhi u dergua me sukses. Ekipi jone do te ju kontaktoj se shpejti.";
+				
+				$sql = "INSERT INTO dataC VALUES ('$name',
+					'$lastN','$address','$email','$message')";
+				
+				if(mysqli_query($conn, $sql)){
+					echo '<script>alert("Mesazhi u dergua me sukses. Ekipi jone do te ju kontaktoj se shpejti.")</script>';
 
-		} else{
-			echo "ERROR: 404 (Te dhenat nuk jane ruajtur) $sql. "
-				. mysqli_error($conn);
-		}
+				} else{
+					echo '<script>alert("ERROR: 404 (Ju lutem plotesoni te gjitha fushat) $sql.")</script>'
+						. mysqli_error($conn);
+				}
 		
-		// Close connection
-		mysqli_close($conn);
+				
+				mysqli_close($conn);
 			}
 		}
 		
