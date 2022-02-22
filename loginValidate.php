@@ -19,7 +19,7 @@
                    $_SESSION['password']= $password;
                    $_SESSION['role']= $user['role'];
                    $_SESSION['logintime']= date("H:i:s");
-                   header("location:shop.php");
+                   header("location:Shop.php");
 
                    exit();
                }

@@ -1,7 +1,7 @@
 <?php
 SESSION_START();
     if (isset($_SESSION['username'])){
-        header("location: shop.php");
+        header("location: Shop.php");
     }else{
 
     

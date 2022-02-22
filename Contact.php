@@ -9,9 +9,9 @@
     <body >
       
       <div class="header" id="Header1">
-        <a href="Home.html" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
+        <a href="Home.php" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
         <div class="header-right">
-          <a href="Home.html">Home</a>
+          <a href="Home.php">Home</a>
           <a class ="active" href="Contact.php">Contact</a>
           <a href="About.html">About</a>
           <a href="Shop.php">Shop</a>
@@ -49,10 +49,10 @@
             
           <div class="footer">
             <div class="footer-left">
-              <a href="Home.html" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
+              <a href="Home.php" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
               <ul id="ul1">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Home.php">Home</a></li>
+                <li><a href="Contact.php">Contact</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Login.php">Login</a></li>
               </div>

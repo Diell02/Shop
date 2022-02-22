@@ -1,3 +1,16 @@
+<?php 
+session_start();
+
+if(!isset($_SESSION['username'])){
+    header("Location: login.php");
+}
+else{
+    if($_SESSION['role'] != "admin" ){
+        header("location: shop.php");
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +23,9 @@
 <body>
 
 <div class="header" id="Header1">
-            <a href="Home.html" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
+            <a href="Home.php" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
             <div class="header-right">
-              <a class="active" href="Home.html">Home</a>
+              <a class="active" href="Home.php">Home</a>
             </div>
           </div>
 
@@ -69,3 +82,7 @@
     </table></div>
 </body>
 </html>
+
+<?php
+}
+?>

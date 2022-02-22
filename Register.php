@@ -11,11 +11,11 @@
 <body>
 
   <div class="header">
-    <a href="Home.html" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
+    <a href="Home.php" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
     <div class="header-right">
-      <a href="Home.html">Home</a>
-      <a href="Login/Login.php">Login</a>
-      <a class="active" href="Register.html">Regjistrohu</a>
+      <a href="Home.php">Home</a>
+      <a href="Login.php">Login</a>
+      <a class="active" href="Register.php">Regjistrohu</a>
       
     </div>
   </div>

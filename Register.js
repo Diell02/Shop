@@ -190,6 +190,6 @@ function passwordVerify() {
 
 function login(){
     
-  window.location = "Login.html";
+  window.location = "Login.php";
   
   }

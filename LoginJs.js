@@ -22,6 +22,6 @@ return false;
 
 function regi(){
     
-window.location = "Register/Register.php";
+window.location = "Register.php";
 
 }
