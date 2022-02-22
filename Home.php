@@ -1,3 +1,5 @@
+<?php 
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,13 +13,13 @@
     <body>
         
           <div class="header" id="Header1">
-            <a href="Home.html" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
+            <a href="Home.php" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
             <div class="header-right">
-              <a class="active" href="Home.html">Home</a>
+              <a class="active" href="Home.php">Home</a>
               <a href="Contact.php">Contact</a>
               <a href="About.html">About</a>
-              <a href="Shop.html">Shop</a>
-              <a href="Login.html">Login</a> 
+              <a href="Shop.php">Shop</a>
+              <a href="Login.php">Login</a> 
             </div>
           </div>
         
@@ -66,7 +68,7 @@
             <h1 id="emri">Bluze</h1>
             <h2 id="cmimi">15.99$</h2>
             <p id="par">Perdorimi: Vrapim<br>Materiali: Pambuk 90%, Poliester 10%</p>
-            <br><a href="Shop.html"><button id="buy-L">Buy</button></a></div>
+            <br><a href="Shop.php"><button id="buy-L">Buy</button></a></div>
         </div>
 
         <div class="Shirt-R">
@@ -75,7 +77,7 @@
             <h1 id="emri">Bluze</h1>
             <h2 id="cmimi">15.99$</h2>
             <p id="par">Perdorimi: Vrapim<br>Materiali: Pambuk 90%, Poliester 10%</p>
-            <br><a href="Shop.html"><button id="buy-R">Buy</button></a></div>
+            <br><a href="Shop.php"><button id="buy-R">Buy</button></a></div>
         </div>
 
         <div class="Shirt-L">
@@ -84,7 +86,7 @@
             <h1 id="emri">Bluze</h1>
             <h2 id="cmimi">15.99$</h2>
             <p id="par">Perdorimi: Vrapim<br>Materiali: Pambuk 90%, Poliester 10%</p>
-            <br><a href="Shop.html"><button id="buy-L">Buy</button></a></div>
+            <br><a href="Shop.php"><button id="buy-L">Buy</button></a></div>
         </div>
 
         <div class="Shirt-R">
@@ -93,7 +95,7 @@
             <h1 id="emri">Bluze</h1>
             <h2 id="cmimi">15.99$</h2>
             <p id="par">Perdorimi: Vrapim<br>Materiali: Pambuk 90%, Poliester 10%</p>
-            <br><a href="Shop.html"><button id="buy-R">Buy</button></a></div>
+            <br><a href="Shop.php"><button id="buy-R">Buy</button></a></div>
         </div><div id="lined"></div>
         <h2 id="rek">Rekomandimet</h2><br>
         <div class="slideshow1">
@@ -140,12 +142,12 @@
 
         <div class="footer">
           <div class="footer-left">
-            <a href="Home.html" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
+            <a href="Home.php" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
             <ul id="ul1">
-              <li><a href="Home.html">Home</a></li>
+              <li><a href="Home.php">Home</a></li>
               <li><a href="Contact.php">Contact</a></li>
               <li><a href="About.html">About</a></li>
-              <li><a href="Login.html">Login</a></li>
+              <li><a href="Login.php">Login</a></li>
             </div>
             <div class="footer-right">
               <a href="https://www.facebook.com" class="icon"><img src="Pics/fb.png" width="30px", height="30px"></a>

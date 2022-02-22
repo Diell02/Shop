@@ -14,8 +14,8 @@
           <a href="Home.html">Home</a>
           <a class ="active" href="Contact.php">Contact</a>
           <a href="About.html">About</a>
-          <a href="Shop.html">Shop</a>
-          <a href="Login.html">Login</a>
+          <a href="Shop.php">Shop</a>
+          <a href="Login.php">Login</a>
         </div>
       </div>
 
@@ -54,7 +54,7 @@
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Contact.html">Contact</a></li>
                 <li><a href="About.html">About</a></li>
-                <li><a href="Login.html">Login</a></li>
+                <li><a href="Login.php">Login</a></li>
               </div>
               <div class="footer-right">
                 <a href="https://www.facebook.com" class="icon"><img src="Pics/fb.png" width="30px", height="30px"></a>

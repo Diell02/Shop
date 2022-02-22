@@ -1,4 +1,14 @@
 <?php 
+  session_start();
+  if(!isset($_SESSION['username'])){
+    header("Location: login.php" );
+  }
+  else{
+    if($_SESSION['role']== "admin"){
+      $hide = "";
+    }else{
+      $hide = "hide";
+    }
 
 ?>
 <!DOCTYPE html>
@@ -6,18 +16,25 @@
     <head>
         <title>Project</title>
         <link rel="stylesheet" type="text/css" href="Shop.css">
+        <style>
+        .hide{
+          display:none;
+        }
+        </style>
     </head>
     
     <body>
         <script src="Shop.js"></script>
         <div class="header">
-            <a href="Home.html" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
+            <a href="Home.php" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
             <div class="header-right">
-              <a href="Home.html">Home</a>
+              <a href="Home.php">Home</a>
               <a href="Contact.php">Contact</a>
               <a href="About.html">About</a>
-              <a class="active" href="Shop.html">Shop</a>
-              <a href="Login.html">Login</a>
+              <a class="active" href="Shop.php">Shop</a>
+              <a href="Login.php">Login</a>
+              <a href="dashboard.php" class="<?php echo $hide ?>">Dashboard</a>
+              <a href="logout.php">Logout</a><br>
               
             </div>
           </div>
@@ -25,12 +42,12 @@
 
           <div class="footer">
             <div class="footer-left">
-              <a href="Home.html" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
+              <a href="Home.php" class="logo"><img src="Pics/Black.png" width="40px", height="40px">Kenzol</a>
               <ul id="ul1">
-                <li><a href="Home.html">Home</a></li>
+                <li><a href="Home.php">Home</a></li>
                 <li><a href="Contact.php">Contact</a></li>
                 <li><a href="About.html">About</a></li>
-                <li><a href="Login.html">Login</a></li>
+                <li><a href="Login.php">Login</a></li>
               </div>
               <div class="footer-right">
                 <a href="https://www.facebook.com" class="icon"><img src="Pics/fb.png" width="30px", height="30px"></a>
@@ -45,3 +62,7 @@
     </body>
     
 </html>
+
+<?php 
+  }
+?>
