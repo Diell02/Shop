@@ -23,6 +23,7 @@ class UserRepository{
         $zipcode = $user->getZipcode();
         $pass = $user->getPass();
         $passc = $user->getPassc();
+       
 
         $sql = "INSERT INTO user (id,name,lastN,address,phone,username,email,zipcode,pass,passc) VALUES (?,?,?,?,?,?,?,?,?,?)";
 
@@ -56,14 +57,14 @@ class UserRepository{
         return $user;
     }
 
-    function updateUser($id,$name,$lastN,$address,$phone,$username,$email,$zipcode,$pass,$passc){
+    function updateUser($id,$name,$lastN,$address,$phone,$username,$email,$zipcode,$pass,$passc, $role){
          $conn = $this->connection;
 
-         $sql = "UPDATE user SET name=?, lastN=?, address=?, phone=?, username=?, email=?, zipcode=?, pass=?, passc=? WHERE id=?";
+         $sql = "UPDATE user SET name=?, lastN=?, address=?, phone=?, username=?, email=?, zipcode=?, pass=?, passc=?, role=? WHERE id=?";
 
          $statement = $conn->prepare($sql);
 
-         $statement->execute([$name,$lastN,$address,$phone,$username,$email,$zipcode,$pass,$passc,$id]);
+         $statement->execute([$name,$lastN,$address,$phone,$username,$email,$zipcode,$pass,$passc,$role,$id]);
 
          echo "<script>alert('update was successful'); </script>";
     } 
@@ -79,10 +80,18 @@ class UserRepository{
 
         echo "<script>alert('delete was successful'); </script>";
    } 
+
+   function getRoleByUser($username){
+    $conn = $this->connection;
+
+    $sql = "SELECT role FROM user WHERE username='$username'";
+
+    $statement = $conn->query($sql);
+    $role = $statement->fetch();
+
+    return $role;
+    }
+
 }
-
-//  $userRepo = new UserRepository;
-
-//  $userRepo->updateUser('1111','SSS','SSS','SSS','SSS','SSS');
 
 ?>

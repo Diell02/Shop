@@ -2,11 +2,11 @@
 session_start();
 
 if(!isset($_SESSION['username'])){
-    header("Location: login.php");
+    header("Location: Login.php");
 }
 else{
     if($_SESSION['role'] != "admin" ){
-        header("location: shop.php");
+        header("location: Shop.php");
     }
 
 ?>
@@ -43,8 +43,9 @@ else{
                  <th>ZIPCODE</th>
                  <th>PASSWORD</th>
                  <th>PASSWORDC</th>
-                 <th>Edit</th>
-                 <th>Delete</th>
+                 <th>ROLE</th>
+                 <th>EDIT</th>
+                 <th>DELETE</th>
                  
              </tr>
 
@@ -69,6 +70,7 @@ else{
                      <td>$user[zipcode] </td>
                      <td>$user[pass] </td>
                      <td>$user[passc] </td>
+                     <td>$user[role] </td>
                      <td><a href='edit.php?id=$user[id]'>Edit</a> </td>
                      <td><a href='delete.php?id=$user[id]'>Delete</a></td>
                      
@@ -80,6 +82,47 @@ else{
              
              ?>
     </table></div>
+
+    <div class="dash1">
+    <table name="info1">
+             <tr id="tab1">
+                 <th>ID</th>
+                 <th>NAME</th>
+                 <th>LAST NAME</th>
+                 <th>ADDRESS</th>
+                 <th>EMAIL</th>
+                 <th>MESSAGE</th>
+                 <th>DELETE</th>
+                 
+             </tr>
+
+             <?php 
+             include_once 'contactRepository.php';
+
+             $contactRepository = new ContactRepository();
+
+             $conts = $contactRepository->getAllConts();
+
+             foreach($conts as $cont){
+                echo 
+                "
+                <tr>
+                     <td>$cont[id]</td>
+                     <td>$cont[name]</td>
+                     <td>$cont[lastN] </td>
+                     <td>$cont[address] </td>
+                     <td>$cont[email] </td>
+                     <td>$cont[message] </td>
+                     <td><a href='delete1.php?id=$cont[id]'>Delete</a></td>
+                </tr>
+                ";
+             }
+
+             
+             
+             ?>
+    </table></div>
+
 </body>
 </html>
 

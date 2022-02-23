@@ -11,8 +11,9 @@ class User{
     private $zipcode;
     private $pass;
     private $passc;
+    private $role;
 
-    function __construct($id,$name,$lastN,$address,$phone,$username,$email,$zipcode,$pass,$passc){
+    function __construct($id,$name,$lastN,$address,$phone,$username,$email,$zipcode,$pass,$passc,$role){
             $this->id = $id;
             $this->name = $name;
             $this->lastN = $lastN;
@@ -23,6 +24,7 @@ class User{
             $this->zipcode = $zipcode;
             $this->pass = $pass;
             $this->passc = $passc;
+            $this->role = $role;
     }
 
     function getId(){
@@ -54,6 +56,9 @@ class User{
     }
     function getPassc(){
         return $this->passc;
+    }
+    function getRole(){
+        return $this->role;
     }
 }
 

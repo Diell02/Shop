@@ -35,6 +35,7 @@ $user  = $userRepository->getUserById($userId);
         <input type="number" name="zipcode"  value="<?=$user['zipcode']?>"> <br> <br>
         <input type="text" name="pass"  value="<?=$user['pass']?>"> <br> <br>
         <input type="text" name="passc"  value="<?=$user['passc']?>"> <br> <br>
+        <input type="text" name="role"  value="<?=$user['role']?>"> <br> <br>
 
         <input type="submit" name="editBtn" value="save"> <br> <br>
     </form>
@@ -44,7 +45,7 @@ $user  = $userRepository->getUserById($userId);
 <?php 
 
 if(isset($_POST['editBtn'])){
-    $id = $user['Id'];
+    $id = $user['id'];
     $name = $_POST['name'];
     $lastN = $_POST['lastN'];
     $address = $_POST['address'];
@@ -54,8 +55,9 @@ if(isset($_POST['editBtn'])){
     $zipcode = $_POST['zipcode'];
     $pass = $_POST['pass'];
     $passc = $_POST['passc'];
+    $role = $_POST['role'];
 
-    $userRepository->updateUser($id,$name,$lastN,$address,$phone,$username,$email,$zipcode,$pass,$passc);
+    $userRepository->updateUser($id,$name,$lastN,$address,$phone,$username,$email,$zipcode,$pass,$passc,$role);
     header("location:dashboard.php");
 }
 
