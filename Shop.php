@@ -1,5 +1,6 @@
 <?php 
   $hide="";
+  $hidee="";
   session_start();
   if(!isset($_SESSION['username'])){
     header("Location: Login.php" );
@@ -7,8 +8,10 @@
   else{
     if($_SESSION['role']== "admin"){
       $hide = "";
+      $hidee="hide";
     }else{
       $hide = "hide";
+      $hidee= "hide";
     }
 
 ?>
@@ -33,7 +36,7 @@
               <a href="Contact.php">Contact</a>
               <a href="About.php">About</a>
               <a class="active" href="Shop.php">Shop</a>
-              <a href="Login.php">Login</a>
+              <a href="Login.php" class="<?php echo $hidee ?>">Login</a>
               <a href="dashboard.php" class="<?php echo $hide ?>">Dashboard</a>
               <a href="logout.php">Logout</a><br>
               
