@@ -81,17 +81,6 @@ class UserRepository{
         echo "<script>alert('delete was successful'); </script>";
    } 
 
-   function getRoleByUser($username){
-    $conn = $this->connection;
-
-    $sql = "SELECT role FROM user WHERE username='$username'";
-
-    $statement = $conn->query($sql);
-    $role = $statement->fetch();
-
-    return $role;
-    }
-
 }
 
 ?>
