@@ -44,7 +44,7 @@ $user  = $userRepository->getUserById($userId);
 <?php 
 
 if(isset($_POST['editBtn'])){
-    $id = $user['Id'];
+    $id = $user['id'];
     $name = $_POST['name'];
     $lastN = $_POST['lastN'];
     $address = $_POST['address'];
