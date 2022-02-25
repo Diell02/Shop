@@ -1,0 +1,57 @@
+* {box-sizing: border-box;background-color: #f1f1f1;
+    font-family: 'Courier New', Courier, monospace;
+}
+h3{
+    text-align: center;
+    padding: 10px;
+}
+
+#content { 
+    overflow:auto; 
+    width: 600px; 
+    
+  } 
+  
+  .left, .right { 
+    width: 40%; 
+    margin:5px; 
+    padding: 1em; 
+    
+  } 
+  
+  .left  { float:left;  }
+  .right { float:right; } 
+
+h5{
+    margin-bottom: 0px;
+}
+
+#editBtn {
+    background-color: #df0c0c;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  #editBtn:hover {
+    opacity:1;
+  }
+
+  input[type=text], input[type=number], input[type=email]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: solid 1px black;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus{
+    background-color: #ddd;
+    outline: none;
+  }
+

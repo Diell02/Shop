@@ -31,7 +31,7 @@ class UserRepository{
 
         $statement->execute([$id,$name,$lastN,$address,$phone,$username,$email,$zipcode,$pass,$passc]);
 
-        echo "<script> alert('User has been inserted successfuly!'); </script>";
+        echo "<script> alert('Urime, ju sapo u regjistruat!'); </script>";
 
     }
 

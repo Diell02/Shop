@@ -29,7 +29,7 @@ else{
             </div>
           </div>
 
-
+          <h2>Te Dhenat E Perdoruesve</h2>
     <div class="dash">
     <table name="info">
              <tr id="tab">
@@ -82,7 +82,8 @@ else{
              
              ?>
     </table></div>
-
+<br>
+    <h2>Mesazhet Nga Klientet</h2>
     <div class="dash1">
     <table name="info1">
              <tr id="tab1">
