@@ -115,3 +115,60 @@
     padding: 10px;
     float:right;
   }
+
+  .Shirt-L{
+    float: left;
+    margin-left: 150px;
+   }
+   .Shirts-L{
+     float:right;
+     
+   }
+   #cmimi{
+     color: red;
+   }
+   #emri{
+     color: rgb(255, 214, 127);
+   }
+   #buy-L{
+     float: right;
+   }
+   
+   .Shirt-R{
+     float: right;
+     margin-right: 150px;
+    }
+    .Shirts-R{
+      float:left;
+    }
+   
+    #buy-L{
+     background-color: #f44336; 
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+   }
+   
+   #buy-L:hover {
+     background-color: #ddd;
+     color: black;
+   }
+   
+    #buy-R{
+     background-color: #f44336; 
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+   }
+   #buy-R:hover {
+     background-color: #ddd;
+     color: black;
+   }
