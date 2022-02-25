@@ -26,7 +26,7 @@ class ContactRepository{
 
         $statement->execute([$id,$name,$lastN,$address,$email,$message]);
 
-        echo "<script> alert('User has been inserted successfuly!'); </script>";
+        echo "<script> alert('Mesazhi juaj u dergua me sukses!'); </script>";
 
     }
 
