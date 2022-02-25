@@ -22,6 +22,12 @@
             </div>
           </div>
 
+          <div class="paragraph">
+            <p>Kenzol lindi si ide nga Dion Nura dhe Diell Këpuska ne vitin 2021. Keta dy te rinj kishin si qellim shperndarjen e brendit te tyre te veshjeve si fillim ne nje treg te vogel sic eshte Kosova, dhe me pas te kapin treg te huaj. 
+              Qellimi i brendit tone te veshjeve eshte qe ti jap komfort dhe stilt e veqant te veshjes cdo konsumatori qe I perdor produktet tona, jane te gjitha kualitet i lart dhe prej pambuku. Dizajni i ketyre veshjeve eshte i vecant dhe kjo e bene mjaft atraktive Kenzol qe spikatet nga brendet e tjera te njohura ne rajon.
+            </p>
+          </div>
+
 
           <div class="footer">
             <div class="footer-left">
