@@ -116,9 +116,91 @@
     float:right;
   }
 
-  .paragraph{
+  .para{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 
-      overflow: hidden;
-      background-color: #f1f1f1;
-      padding: 5px;
+  #titu{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #linet{
+    text-align: center;
+    border: solid 2px;
+    
+    margin-bottom: 50px;
+  }
+
+  .line{
+    margin-top: 50px;
+    border: solid 1px;
+  }
+
+  #par1{
+    text-align: center;
+    margin-right: 400px;
+    padding: 20px;
+    border: outset 4px rgb(228, 120, 120);
+  }
+
+  #par2{
+    text-align: center;
+    margin-left: 400px;
+    padding: 20px;
+    border: outset 4px rgb(228, 120, 120);
+    
+  }
+
+  #par3{
+    text-align: center;
+    margin-right: 400px;
+    padding: 20px;
+    border: outset 4px rgb(228, 120, 120);
+  }
+
+  #par4{
+    text-align: center;
+    margin-left: 400px;
+    padding: 20px;
+    border: outset 4px rgb(228, 120, 120);
+  }
+
+  #par5{
+    text-align: center;
+    margin-right: 500px;
+    padding: 20px;
+    border: outset 4px rgb(228, 120, 120);
+  }
+
+  .founders{
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .img1{
+    margin-left: 340px;
+    margin-right: 150px;
+  }
+
+  .img2{
+    margin-right: 300px;
+    margin-left: 150px;
+  }
+  
+  #texti1{
+    margin-left: 180px;
+    text-align: center;
+  }
+  #texti2{
+    margin-right: 150px;
+    text-align: center;
+  }
+
+  #titullf{
+    margin-top: 50px;
+    text-align: center;
+    
   }
