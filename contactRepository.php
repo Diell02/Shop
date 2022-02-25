@@ -8,7 +8,11 @@ class ContactRepository{
         $conn = new DatabaseConnection;
         $this->connection = $conn->startConnection();
     }
+ 
 
+    function (){
+        
+    }
     function insertCont($cont){
 
         $conn = $this->connection;
