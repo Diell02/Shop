@@ -5,7 +5,7 @@
         <title>Project</title>
         <link rel="stylesheet" type="text/css" href="Contact.css">
     </head>
-    <style></style
+
     <body >
       
       <div class="header" id="Header1">

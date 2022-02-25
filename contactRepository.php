@@ -9,10 +9,6 @@ class ContactRepository{
         $this->connection = $conn->startConnection();
     }
  
-
-    function (){
-        
-    }
     function insertCont($cont){
 
         $conn = $this->connection;
