@@ -1,6 +1,35 @@
-<?php 
+<?php
+
+require "connectionA.php";
+ 
+
+$id1 = 1;
+$stmt1 = $pdo->prepare("SELECT * FROM `about_contents` WHERE `id`=?");
+$stmt1->execute([$id1]);
+$conpar1 = $stmt1->fetch();
+
+$id2 = 2;
+$stmt2 = $pdo->prepare("SELECT * FROM `about_contents` WHERE `id`=?");
+$stmt2->execute([$id2]);
+$conpar2 = $stmt2->fetch();
+
+$id3 = 3;
+$stmt3 = $pdo->prepare("SELECT * FROM `about_contents` WHERE `id`=?");
+$stmt3->execute([$id3]);
+$conpar3 = $stmt3->fetch();
+
+$id4 = 4;
+$stmt4 = $pdo->prepare("SELECT * FROM `about_contents` WHERE `id`=?");
+$stmt4->execute([$id4]);
+$conpar4 = $stmt4->fetch();
+
+$id5 = 5;
+$stmt5 = $pdo->prepare("SELECT * FROM `about_contents` WHERE `id`=?");
+$stmt5->execute([$id5]);
+$conpar5 = $stmt5->fetch();
 
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,57 +51,21 @@
             </div>
           </div>
 
+          
             <div class="para">
               <h2 id="titu">Our Story</h2>
               <div id="linet"></div>
 
-            <p id="par1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet porttitor porttitor.
-              Mauris in purus turpis. Aliquam molestie lorem vel arcu accumsan, non porta tellus cursus. 
-              Nunc sed nulla a magna porttitor venenatis at sit amet sapien. Nullam gravida magna tincidunt
-              sodales varius. Praesent tincidunt, enim ac tempor feugiat, leo nulla convallis dui, 
-              id viverra libero urna sit amet lacus. Vivamus placerat, mi in fermentum tempor, nisi sem 
-              posuere mauris, id consequat est ipsum id elit. Ut iaculis, neque sit amet mollis viverra, 
-              felis justo gravida velit, ultricies gravida odio nisl ut quam. Sed at urna lectus. Duis 
-              pharetra efficitur ligula lacinia eleifend. Proin viverra massa elit, vel gravida mi 
-              vestibulum ut.</p>
+            <p id="par1"><?=$conpar1["contents"]?></p>
               
 
-            <p id="par2">Morbi dapibus tellus enim, eget luctus lacus dictum eget. Aliquam felis nibh, auctor id 
-              feugiat in, consequat ac augue. Vivamus vitae facilisis purus, in condimentum velit. 
-              Curabitur convallis sagittis magna, id accumsan turpis hendrerit quis. Donec venenatis 
-              facilisis nisi, a sollicitudin ante fermentum sit amet. Cras sit amet arcu ut lacus 
-              finibus tempus. Quisque placerat at elit vitae consectetur. Fusce in ex in tortor dapibus 
-              viverra vitae at urna. Curabitur in augue id est molestie dapibus. Praesent porta mattis
-              mi ut maximus. Curabitur a ipsum in lectus malesuada mattis. In in facilisis orci. 
-              Aenean in turpis dui. Nam dapibus erat at libero eleifend ullamcorper.</p>
+            <p id="par2"><?=$conpar2["contents"]?></p>
 
-            <p id="par3">Praesent mi mauris, aliquam gravida metus et, commodo hendrerit augue. 
-              Sed molestie et ex nec finibus. Morbi quis ante quis nisi dignissim placerat. 
-              Sed tristique efficitur eros, a condimentum arcu ullamcorper eget. 
-              Pellentesque finibus orci ut eros vestibulum rutrum. Curabitur accumsan sodales viverra. 
-              Mauris venenatis turpis eu velit elementum, sit amet aliquet nulla aliquam. 
-              Nunc sed diam mauris. Ut maximus fermentum leo, ut ullamcorper nisl venenatis non. 
-              Curabitur lacinia tempor urna, at porttitor est interdum sit amet. 
-              Nullam tempor erat ac mi congue, vel tristique erat convallis.</p>
+            <p id="par3"><?=$conpar3["contents"]?></p>
 
-            <p id="par4">Maecenas odio ipsum, tristique sed tellus vitae, pulvinar fermentum est. 
-              Morbi vehicula metus quis ex bibendum, rutrum fermentum eros ornare. 
-              Maecenas a ligula placerat, rutrum erat vitae, bibendum dolor. 
-              Integer vestibulum auctor mi, sit amet laoreet nisl luctus quis. 
-              Ut id lacus mollis, aliquet diam quis, varius risus. 
-              Donec pulvinar purus commodo tincidunt faucibus. Pellentesque condimentum, 
-              justo auctor eleifend rhoncus, velit velit aliquet ligula, et sodales quam sapien nec enim.
-              Curabitur tortor magna, feugiat eget placerat quis, varius eget turpis. 
-              Aenean iaculis quis turpis sit amet placerat.</p>
+            <p id="par4"><?=$conpar4["contents"]?>.</p>
 
-            <p id="par5">Suspendisse malesuada sem quis fermentum ultrices. 
-              Praesent sollicitudin ante in arcu accumsan, quis gravida risus eleifend. 
-              Nulla facilisi. Etiam sit amet posuere turpis. Morbi dictum mi tortor, 
-              sit amet elementum ipsum mattis non. Nunc ligula eros, rutrum nec fringilla vulputate, 
-              lacinia vel nunc. Suspendisse potenti. Proin consectetur id ante et eleifend. 
-              Pellentesque eros nisl, varius et nunc non, facilisis vestibulum enim. Nunc vel nibh posuere,
-              sollicitudin dolor nec, sollicitudin tortor. Nam pretium nisi ut urna consequat, 
-              at scelerisque massa sagittis.</p>
+            <p id="par5"><?=$conpar5["contents"]?></p>
               
               </div>
               <h2 id="titullf">Founders</h2>
