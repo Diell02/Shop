@@ -22,7 +22,7 @@
         <div class="container">
           <div id="map">
             <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTT55Tbb8I00KPYu079yjwC2DLdLNoi2c&callback=initMap&libraries=&v=weekly"
+            src="API"
             async
           ></script></div>
             <div class="row">
